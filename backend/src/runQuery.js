@@ -1,6 +1,4 @@
-const { getConnection } = require("./database");
-
-const connection = getConnection();
+const { getConnection, connect } = require("./database");
 
 function runQuery(query, connection) {
   const promise = new Promise((resolve, reject) => {
